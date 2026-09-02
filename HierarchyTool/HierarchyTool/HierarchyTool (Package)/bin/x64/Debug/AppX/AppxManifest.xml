@@ -12,7 +12,7 @@
   <Properties>
     <DisplayName>HierarchyTool (Package)</DisplayName>
     <PublisherDisplayName>sasmi</PublisherDisplayName>
-    <Logo>Images\StoreLogo.png</Logo>
+    <Logo>Images\HierarchyFolderLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0" />
@@ -25,8 +25,8 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="HierarchyTool\HierarchyTool.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="HierarchyTool (Package)" Description="HierarchyTool (Package)" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="HierarchyTool (Package)" Description="HierarchyTool (Package)" BackgroundColor="transparent" Square150x150Logo="Images\HierarchyFolderLogo.png" Square44x44Logo="Images\HierarchyFolderLogo.png">
+        <uap:DefaultTile Wide310x150Logo="Images\HierarchyFolderLogo.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

@@ -82,3 +82,11 @@ G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\Hierar
 G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\obj\x64\Debug\ProjectArchitectures.txt
 G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\obj\x64\Debug\HierarchyTool (Package).wapproj.LastBuild.txt
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\Assets\myapp.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\Assets\open-folder.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\Assets\righthandbackground.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\HierarchyTool\Assets\myapp.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\HierarchyTool\Assets\open-folder.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\HierarchyTool\Assets\righthandbackground.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\Assets\hierarchy-folder.ico
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\HierarchyTool\Assets\hierarchy-folder.ico

@@ -17,7 +17,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A65DA8D9A3D403C56822100DB0F4750D668B876895CDA9991A9216D59619AE67</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>05CD7CABD74F16032F02171E5D7A8AECE3BEE864B00AC6DBACD16000C8A424D5</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b05cad5f-f4c6-4561-9682-a35a420907cb_1.0.0.0_x64__0j5b9j904p0r0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b05cad5f-f4c6-4561-9682-a35a420907cb_0j5b9j904p0r0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>b05cad5f-f4c6-4561-9682-a35a420907cb</RegisteredPackageID>
@@ -28,7 +28,7 @@
     <AppXManifest Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-09-02T09:41:04.954</Modified>
+      <Modified>2026-09-02T18:19:31.005</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -50,7 +50,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>MainWindow.xbf</PackagePath>
-      <Modified>2026-09-02T09:34:42.161</Modified>
+      <Modified>2026-09-02T17:26:59.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\hierarchy-folder.ico">
+      <PackagePath>Assets\hierarchy-folder.ico</PackagePath>
+      <Modified>2026-09-02T17:42:35.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\myapp.png">
+      <PackagePath>Assets\myapp.png</PackagePath>
+      <Modified>2026-09-02T16:05:13.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\open-folder.png">
+      <PackagePath>Assets\open-folder.png</PackagePath>
+      <Modified>2026-09-02T10:06:59.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\righthandbackground.png">
+      <PackagePath>Assets\righthandbackground.png</PackagePath>
+      <Modified>2026-09-02T16:10:34.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\SplashScreen.scale-200.png">
       <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
@@ -63,32 +79,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Square150x150Logo.scale-200.png">
       <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2026-09-02T05:14:29.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Square44x44Logo.scale-200.png">
       <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2026-09-02T05:14:29.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2026-09-02T05:14:29.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\StoreLogo.png">
       <PackagePath>Images\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2026-09-02T05:14:29.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Wide310x150Logo.scale-200.png">
       <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2026-09-02T05:14:29.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-09-02T09:05:53.785</Modified>
+      <Modified>2026-09-02T18:19:30.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>HierarchyTool\Microsoft.Web.WebView2.Core.dll</PackagePath>
@@ -284,7 +295,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.deps.json">
       <PackagePath>HierarchyTool\HierarchyTool.deps.json</PackagePath>
-      <Modified>2026-09-02T09:05:47.041</Modified>
+      <Modified>2026-09-02T18:19:27.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\App.xbf">
       <PackagePath>HierarchyTool\App.xbf</PackagePath>
@@ -292,19 +303,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>HierarchyTool\MainWindow.xbf</PackagePath>
-      <Modified>2026-09-02T09:34:42.161</Modified>
+      <Modified>2026-09-02T17:26:59.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\myapp.png">
+      <PackagePath>HierarchyTool\Assets\myapp.png</PackagePath>
+      <Modified>2026-09-02T16:05:13.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\open-folder.png">
+      <PackagePath>HierarchyTool\Assets\open-folder.png</PackagePath>
+      <Modified>2026-09-02T10:06:59.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\righthandbackground.png">
+      <PackagePath>HierarchyTool\Assets\righthandbackground.png</PackagePath>
+      <Modified>2026-09-02T16:10:34.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\hierarchy-folder.ico">
+      <PackagePath>HierarchyTool\Assets\hierarchy-folder.ico</PackagePath>
+      <Modified>2026-09-02T17:42:35.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>HierarchyTool\HierarchyTool.exe</PackagePath>
-      <Modified>2026-09-02T09:40:43.074</Modified>
+      <Modified>2026-09-02T18:19:27.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.runtimeconfig.json">
       <PackagePath>HierarchyTool\HierarchyTool.runtimeconfig.json</PackagePath>
-      <Modified>2026-09-02T09:05:47.083</Modified>
+      <Modified>2026-09-02T18:19:27.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.dll">
       <PackagePath>HierarchyTool\HierarchyTool.dll</PackagePath>
-      <Modified>2026-09-02T09:40:43.067</Modified>
+      <Modified>2026-09-02T18:19:27.108</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

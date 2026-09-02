@@ -40,6 +40,18 @@
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>MainWindow.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\hierarchy-folder.ico">
+      <PackagePath>Assets\hierarchy-folder.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\myapp.png">
+      <PackagePath>Assets\myapp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\open-folder.png">
+      <PackagePath>Assets\open-folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\righthandbackground.png">
+      <PackagePath>Assets\righthandbackground.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\SplashScreen.scale-200.png">
       <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -49,23 +61,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Square150x150Logo.scale-200.png">
       <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Square44x44Logo.scale-200.png">
       <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\StoreLogo.png">
       <PackagePath>Images\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\Wide310x150Logo.scale-200.png">
       <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
@@ -222,6 +229,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>HierarchyTool\MainWindow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\myapp.png">
+      <PackagePath>HierarchyTool\Assets\myapp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\open-folder.png">
+      <PackagePath>HierarchyTool\Assets\open-folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\righthandbackground.png">
+      <PackagePath>HierarchyTool\Assets\righthandbackground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\Assets\hierarchy-folder.ico">
+      <PackagePath>HierarchyTool\Assets\hierarchy-folder.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>HierarchyTool\HierarchyTool.exe</PackagePath>

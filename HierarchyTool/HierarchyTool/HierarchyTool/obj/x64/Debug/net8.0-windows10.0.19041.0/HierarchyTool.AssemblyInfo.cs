@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HierarchyTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc03f70a0b67381273b4febf0bd0a92f7fb00090")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f783fb1dcb3f16a1a78c8f993b348cbdfab36d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("HierarchyTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HierarchyTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

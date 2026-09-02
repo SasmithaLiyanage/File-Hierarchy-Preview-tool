@@ -7,57 +7,91 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Title="HierarchyTool">
+    Title="Hierarchy Previewer">
 
     <Window.SystemBackdrop>
         <MicaBackdrop />
     </Window.SystemBackdrop>
-    <Grid Padding="12">
+    <Grid Background="#00131C">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1.2*" />
-            <ColumnDefinition Width="1.8*" />
+            <ColumnDefinition Width="15*" />
+            <ColumnDefinition Width="10*" />
         </Grid.ColumnDefinitions>
 
         <!-- Left: Editor / Templates -->
-        <Border Grid.Column="0" Margin="0,0,12,0" Background="{ThemeResource SystemControlBackgroundAltHighBrush}" CornerRadius="6">
-            <Grid Padding="12">
+        <Border Grid.Column="0" Background="#00131C">
+            <Grid Padding="28,32,30,28">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Horizontal" Spacing="8">
-                    <Button Content="Vite React" x:Name="ViteButton" Click="ViteButton_Click" />
-                    <Button Content="Spring Boot" x:Name="SpringButton" Click="SpringButton_Click" />
-                    <Button Content="Blank" x:Name="BlankButton" Click="BlankButton_Click" />
+                <StackPanel Orientation="Horizontal" Spacing="16">
+                    <Image Source="ms-appx:///Assets/open-folder.png" Width="48" Height="48" Stretch="Uniform" />
+                    <TextBlock Text="Hierarchy Previewer" Foreground="#F4F8FC" FontSize="25" VerticalAlignment="Center" />
                 </StackPanel>
 
-                <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,8,0,8" Spacing="8">
-                    <Button Content="Add File" x:Name="AddFileButton" />
-                    <Button Content="Add Folder" x:Name="AddFolderButton" />
-                </StackPanel>
+                <Grid Grid.Row="1" Margin="0,28,0,12">
+                    <StackPanel Spacing="4">
+                        <Grid>
+                            <TextBlock Text="> codebase" Foreground="#91A4B4" FontSize="18" />
+                            <TextBlock HorizontalAlignment="Right" Foreground="#91A4B4" FontSize="13">
+                                <Run Foreground="#3A73F4" Text="folder" /><Run Text=" - create a directory" />
+                            </TextBlock>
+                        </Grid>
+                        <TextBlock x:Name="DestinationTextBlock" Text="Destination: not selected" Foreground="#6D8493" FontSize="12" TextTrimming="CharacterEllipsis" />
+                    </StackPanel>
+                </Grid>
 
-                <TextBox x:Name="ScriptTextBox" Grid.Row="2" AcceptsReturn="True" TextWrapping="Wrap" PlaceholderText="Type file/folder script here..." />
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Spacing="8" Margin="0,0,0,12">
+                        <Button Content="Vite React" x:Name="ViteButton" Click="ViteButton_Click" Background="#102F45" Foreground="#F4F8FC" />
+                        <Button Content="Spring Boot" x:Name="SpringButton" Click="SpringButton_Click" Background="#102F45" Foreground="#F4F8FC" />
+                        <Button Content="Blank" x:Name="BlankButton" Click="BlankButton_Click" Background="#102F45" Foreground="#F4F8FC" />
+                    </StackPanel>
+                    <Border Grid.Row="1" BorderBrush="#17323E" BorderThickness="2" CornerRadius="16" Background="#001B26">
+                        <Grid>
+                            <TextBox x:Name="ScriptTextBox" AcceptsReturn="True" TextWrapping="Wrap" Padding="14,12" BorderThickness="0" Background="Transparent" Foreground="#F4F8FC" PlaceholderText="folder name1 { file name2.txt }" FontFamily="Consolas" FontSize="14" IsTabStop="True" TabIndex="0" TextChanged="ScriptTextBox_TextChanged" KeyDown="ScriptTextBox_KeyDown" />
+                            <StackPanel VerticalAlignment="Bottom" Margin="14,0,14,14" Orientation="Horizontal" Spacing="8">
+                                <Button Content="Add file" x:Name="AddFileButton" Click="AddFileButton_Click" Background="#123146" Foreground="#91A4B4" />
+                                <Button Content="Add folder" x:Name="AddFolderButton" Click="AddFolderButton_Click" Background="#123146" Foreground="#91A4B4" />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
             </Grid>
         </Border>
 
         <!-- Right: Preview and actions -->
-        <Border Grid.Column="1" Background="{ThemeResource SystemControlBackgroundAltHighBrush}" CornerRadius="6">
-            <Grid Padding="12">
+        <Border Grid.Column="1">
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="ms-appx:///Assets/righthandbackground.png" Stretch="UniformToFill" Opacity="0.8" />
+                </Grid.Background>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
-                    <StackPanel x:Name="PreviewPanel" />
+                <ScrollViewer Grid.Row="0" Padding="56,48,40,20" VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="PreviewPanel" HorizontalAlignment="Left" />
                 </ScrollViewer>
 
-                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8" Margin="0,8,0,0">
-                    <Button Content="Export Markdown" x:Name="ExportMarkdownButton" Click="ExportMarkdown_Click" />
-                    <Button Content="Export Image" x:Name="ExportImageButton" Click="ExportImage_Click" />
-                    <Button Content="Generate Files" x:Name="GenerateFilesButton" Click="GenerateFiles_Click" />
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="12" Margin="0,0,42,24">
+                    <Button x:Name="ExportMarkdownButton" Click="ExportMarkdown_Click" Background="#D8D8D8" Foreground="#222222">
+                        <StackPanel Orientation="Horizontal" Spacing="7"><FontIcon Glyph="&#xE74E;" /><TextBlock Text="save" /></StackPanel>
+                    </Button>
+                    <Button x:Name="ExportImageButton" Click="ExportImage_Click" Background="#D8D8D8" Foreground="#222222">
+                        <StackPanel Orientation="Horizontal" Spacing="7"><FontIcon Glyph="&#xE91B;" /><TextBlock Text="Image" /></StackPanel>
+                    </Button>
+                    <Button x:Name="GenerateFilesButton" Click="GenerateFiles_Click" Background="#D8D8D8" Foreground="#222222">
+                        <StackPanel Orientation="Horizontal" Spacing="7"><FontIcon Glyph="&#xE756;" /><TextBlock Text="terminal" /></StackPanel>
+                    </Button>
                 </StackPanel>
             </Grid>
         </Border>

@@ -91,3 +91,7 @@ G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\Hierar
 G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\qualifiers.txt
 G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\qualifiers.txt.intermediate
 G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\MultipleQualifiersPerDimensionFound.txt
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\myapp.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\open-folder.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\righthandbackground.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\hierarchy-folder.ico

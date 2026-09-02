@@ -13,6 +13,28 @@
 					<Value>MainWindow.xbf</Value>
 				</Candidate>
 			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="hierarchy-folder.ico" uri="ms-resource://HierarchyTool/Files/Assets/hierarchy-folder.ico">
+					<Candidate type="Path">
+						<Value>Assets\hierarchy-folder.ico</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="myapp.png" uri="ms-resource://HierarchyTool/Files/Assets/myapp.png">
+					<Candidate type="Path">
+						<Value>Assets\myapp.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="open-folder.png" uri="ms-resource://HierarchyTool/Files/Assets/open-folder.png">
+					<Candidate type="Path">
+						<Value>Assets\open-folder.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="righthandbackground.png" uri="ms-resource://HierarchyTool/Files/Assets/righthandbackground.png">
+					<Candidate type="Path">
+						<Value>Assets\righthandbackground.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
 		</ResourceMapSubtree>
 	</ResourceMap>
 </PriInfo>
