@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\DEVOS\\File-Hierarchy-Preveiw\\File-Hierarchy-Preview-tool\\HierarchyTool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87A4C293-9A7E-4908-A148-3C667CA2E02A}|HierarchyTool\\HierarchyTool\\HierarchyTool.csproj|g:\\devos\\file-hierarchy-preveiw\\file-hierarchy-preview-tool\\hierarchytool\\hierarchytool\\hierarchytool\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A4C293-9A7E-4908-A148-3C667CA2E02A}|HierarchyTool\\HierarchyTool\\HierarchyTool.csproj|solutionrelative:hierarchytool\\hierarchytool\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A4C293-9A7E-4908-A148-3C667CA2E02A}|HierarchyTool\\HierarchyTool\\HierarchyTool.csproj|g:\\devos\\file-hierarchy-preveiw\\file-hierarchy-preview-tool\\hierarchytool\\hierarchytool\\hierarchytool\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{87A4C293-9A7E-4908-A148-3C667CA2E02A}|HierarchyTool\\HierarchyTool\\HierarchyTool.csproj|solutionrelative:hierarchytool\\hierarchytool\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "G:\\DEVOS\\File-Hierarchy-Preveiw\\File-Hierarchy-Preview-tool\\HierarchyTool\\HierarchyTool\\HierarchyTool\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HierarchyTool\\HierarchyTool\\MainWindow.xaml.cs",
+              "ToolTip": "G:\\DEVOS\\File-Hierarchy-Preveiw\\File-Hierarchy-Preview-tool\\HierarchyTool\\HierarchyTool\\HierarchyTool\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HierarchyTool\\HierarchyTool\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T09:02:34.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "G:\\DEVOS\\File-Hierarchy-Preveiw\\File-Hierarchy-Preview-tool\\HierarchyTool\\HierarchyTool\\HierarchyTool\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "HierarchyTool\\HierarchyTool\\MainWindow.xaml",
+              "ToolTip": "G:\\DEVOS\\File-Hierarchy-Preveiw\\File-Hierarchy-Preview-tool\\HierarchyTool\\HierarchyTool\\HierarchyTool\\MainWindow.xaml",
+              "RelativeToolTip": "HierarchyTool\\HierarchyTool\\MainWindow.xaml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-02T09:01:21.187Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

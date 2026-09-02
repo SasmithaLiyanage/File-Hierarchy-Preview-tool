@@ -1,0 +1,68 @@
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\buildTransitive\..\\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\lib_manual\net6.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\lib\Microsoft.Web.WebView2.Core.winmd
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\App.xbf
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\SplashScreen.scale-200.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\LockScreenLogo.scale-200.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\Square150x150Logo.scale-200.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\Square44x44Logo.scale-200.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\StoreLogo.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\Images\Wide310x150Logo.scale-200.png
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool (Package)\bin\x64\Debug\resources.pri
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windows.ai.machinelearning\2.1.74\lib\net8.0-windows10.0.17763.0\Microsoft.ML.OnnxRuntime.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windows.ai.machinelearning\2.1.74\lib\net8.0-windows10.0.17763.0\Microsoft.Windows.AI.MachineLearning.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Graphics.Imaging.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AI.ContentSafety.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AI.Foundation.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AI.Imaging.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AI.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AI.Text.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.ai\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AI.Video.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Security.Authentication.OAuth.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AppLifecycle.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.AppNotifications.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.ApplicationModel.Background.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.BadgeNotifications.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Foundation.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Management.Deployment.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Media.Capture.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.PushNotifications.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Security.AccessControl.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Storage.Pickers.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Storage.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.System.Power.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.System.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\lib\net6.0-windows10.0.17763.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.interactiveexperiences\2.1.6\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.search\2.4.4\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Search.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.widgets\2.0.5\lib\net6.0-windows10.0.17763.0\Microsoft.Windows.Widgets.Projection.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.winui\2.3.6\lib\net6.0-windows10.0.17763.0\Microsoft.WinUI.dll
+C:\Users\sasmi\.nuget\packages\system.numerics.tensors\9.0.0\lib\net8.0\System.Numerics.Tensors.dll
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-arm64\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-arm64ec\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-arm64ec\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-x64\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-x86\native\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windowsappsdk.foundation\2.3.9\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\sasmi\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll
+C:\Users\sasmi\.nuget\packages\microsoft.web.webview2\1.0.3719.77\lib_manual\net8.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.deps.json
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\App.xbf
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\apphost.exe
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.runtimeconfig.json
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.dll
+G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.pdb

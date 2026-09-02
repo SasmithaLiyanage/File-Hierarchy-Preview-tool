@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="HierarchyTool.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HierarchyTool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="HierarchyTool">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+    <Grid Padding="12">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*" />
+            <ColumnDefinition Width="1.8*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Left: Editor / Templates -->
+        <Border Grid.Column="0" Margin="0,0,12,0" Background="{ThemeResource SystemControlBackgroundAltHighBrush}" CornerRadius="6">
+            <Grid Padding="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <Button Content="Vite React" x:Name="ViteButton" />
+                    <Button Content="Spring Boot" x:Name="SpringButton" />
+                    <Button Content="Blank" x:Name="BlankButton" />
+                </StackPanel>
+
+                <ToolBar Grid.Row="1" Margin="0,8,0,8">
+                    <Button Content="Add File" x:Name="AddFileButton" />
+                    <Button Content="Add Folder" x:Name="AddFolderButton" />
+                </ToolBar>
+
+                <TextBox x:Name="ScriptTextBox" Grid.Row="2" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" PlaceholderText="Type file/folder script here..." />
+            </Grid>
+        </Border>
+
+        <!-- Right: Preview and actions -->
+        <Border Grid.Column="1" Background="{ThemeResource SystemControlBackgroundAltHighBrush}" CornerRadius="6">
+            <Grid Padding="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TreeView x:Name="PreviewTreeView" Grid.Row="0" />
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8" Margin="0,8,0,0">
+                    <Button Content="Export Markdown" x:Name="ExportMarkdownButton" />
+                    <Button Content="Export Image" x:Name="ExportImageButton" />
+                    <Button Content="Generate Files" x:Name="GenerateFilesButton" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
