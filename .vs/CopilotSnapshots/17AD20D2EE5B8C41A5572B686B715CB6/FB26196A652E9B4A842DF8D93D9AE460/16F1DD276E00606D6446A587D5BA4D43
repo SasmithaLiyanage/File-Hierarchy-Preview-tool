@@ -1,0 +1,111 @@
+﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Controls.Primitives;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Input;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Navigation;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+
+// To learn more about WinUI, the WinUI project structure,
+// and more about our project templates, see: http://aka.ms/winui-project-info.
+
+namespace HierarchyTool
+{
+    /// <summary>
+    /// An empty window that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainWindow : Window
+    {
+        private TextBox? _scriptTextBox;
+        public MainWindow()
+        {
+            InitializeComponent();
+            // Attempt to locate the TextBox in the visual tree after InitializeComponent
+            _scriptTextBox = FindChildByName<TextBox>(this.Content as DependencyObject, "ScriptTextBox");
+        }
+
+        private T? FindChildByName<T>(DependencyObject? parent, string name) where T : DependencyObject
+        {
+            if (parent == null)
+                return null;
+
+            int count = VisualTreeHelper.GetChildrenCount(parent);
+            for (int i = 0; i < count; i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+                if (child is FrameworkElement fe && fe.Name == name && child is T typed)
+                    return typed;
+
+                var result = FindChildByName<T>(child, name);
+                if (result != null)
+                    return result;
+            }
+
+            return null;
+        }
+
+        private void ViteButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_scriptTextBox != null)
+            {
+                _scriptTextBox.Text = "my-vite-app/\n├── src/\n│   ├── App.jsx\n│   └── main.jsx\n└── index.html\npackage.json\n";
+            }
+        }
+
+        private void SpringButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_scriptTextBox != null)
+            {
+                _scriptTextBox.Text = "my-spring-app/\n├── src/main/java/com/app/\n├── src/main/resources/application.properties\n└── pom.xml\n";
+            }
+        }
+
+        private void BlankButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_scriptTextBox != null)
+            {
+                _scriptTextBox.Text = string.Empty;
+            }
+        }
+
+        private async void ExportMarkdown_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new ContentDialog()
+            {
+                Title = "Export Markdown",
+                Content = "Markdown export is not implemented yet.",
+                CloseButtonText = "OK"
+            };
+            await dlg.ShowAsync();
+        }
+
+        private async void ExportImage_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new ContentDialog()
+            {
+                Title = "Export Image",
+                Content = "Image export is not implemented yet.",
+                CloseButtonText = "OK"
+            };
+            await dlg.ShowAsync();
+        }
+
+        private async void GenerateFiles_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new ContentDialog()
+            {
+                Title = "Generate Files",
+                Content = "File system generation is not implemented yet.",
+                CloseButtonText = "OK"
+            };
+            await dlg.ShowAsync();
+        }
+    }
+}

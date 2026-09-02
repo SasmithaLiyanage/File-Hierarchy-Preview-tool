@@ -28,7 +28,7 @@
     <AppXManifest Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-09-02T09:05:53.902</Modified>
+      <Modified>2026-09-02T09:41:04.954</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -50,7 +50,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>MainWindow.xbf</PackagePath>
-      <Modified>2026-09-02T09:05:45.285</Modified>
+      <Modified>2026-09-02T09:34:42.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool %28Package%29\Images\SplashScreen.scale-200.png">
       <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
@@ -292,11 +292,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
       <PackagePath>HierarchyTool\MainWindow.xbf</PackagePath>
-      <Modified>2026-09-02T09:05:45.285</Modified>
+      <Modified>2026-09-02T09:34:42.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\obj\x64\Debug\net8.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>HierarchyTool\HierarchyTool.exe</PackagePath>
-      <Modified>2026-09-02T09:05:46.453</Modified>
+      <Modified>2026-09-02T09:40:43.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.runtimeconfig.json">
       <PackagePath>HierarchyTool\HierarchyTool.runtimeconfig.json</PackagePath>
@@ -304,7 +304,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\DEVOS\File-Hierarchy-Preveiw\File-Hierarchy-Preview-tool\HierarchyTool\HierarchyTool\HierarchyTool\bin\x64\Debug\net8.0-windows10.0.19041.0\HierarchyTool.dll">
       <PackagePath>HierarchyTool\HierarchyTool.dll</PackagePath>
-      <Modified>2026-09-02T09:05:46.432</Modified>
+      <Modified>2026-09-02T09:40:43.067</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

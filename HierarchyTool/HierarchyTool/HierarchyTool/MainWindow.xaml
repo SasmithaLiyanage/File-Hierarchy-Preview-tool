@@ -50,7 +50,9 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <TreeView x:Name="PreviewTreeView" Grid.Row="0" />
+                <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:Name="PreviewPanel" />
+                </ScrollViewer>
 
                 <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8" Margin="0,8,0,0">
                     <Button Content="Export Markdown" x:Name="ExportMarkdownButton" Click="ExportMarkdown_Click" />

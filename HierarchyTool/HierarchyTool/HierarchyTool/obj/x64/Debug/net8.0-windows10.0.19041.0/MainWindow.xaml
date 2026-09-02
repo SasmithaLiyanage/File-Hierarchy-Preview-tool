@@ -50,12 +50,14 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <TreeView x:ConnectionId='2' x:Name="PreviewTreeView" Grid.Row="0" />
+                <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+                    <StackPanel x:ConnectionId='5' x:Name="PreviewPanel" />
+                </ScrollViewer>
 
                 <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8" Margin="0,8,0,0">
-                    <Button x:ConnectionId='3' Content="Export Markdown" x:Name="ExportMarkdownButton"                              />
-                    <Button x:ConnectionId='4' Content="Export Image" x:Name="ExportImageButton"                           />
-                    <Button x:ConnectionId='5' Content="Generate Files" x:Name="GenerateFilesButton"                             />
+                    <Button x:ConnectionId='2' Content="Export Markdown" x:Name="ExportMarkdownButton"                              />
+                    <Button x:ConnectionId='3' Content="Export Image" x:Name="ExportImageButton"                           />
+                    <Button x:ConnectionId='4' Content="Generate Files" x:Name="GenerateFilesButton"                             />
                 </StackPanel>
             </Grid>
         </Border>

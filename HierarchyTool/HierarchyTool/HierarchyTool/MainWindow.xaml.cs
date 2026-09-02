@@ -24,11 +24,30 @@ namespace HierarchyTool
     public sealed partial class MainWindow : Window
     {
         private TextBox? _scriptTextBox;
+        private StackPanel? _previewPanel;
         public MainWindow()
         {
             InitializeComponent();
-            // Attempt to locate the TextBox in the visual tree after InitializeComponent
-            _scriptTextBox = FindChildByName<TextBox>(this.Content as DependencyObject, "ScriptTextBox");
+            // Attempt to locate the TextBox and preview panel after InitializeComponent
+            _scriptTextBox = (this.Content as FrameworkElement)?.FindName("ScriptTextBox") as TextBox ?? FindChildByName<TextBox>(this.Content as DependencyObject, "ScriptTextBox");
+            if (_scriptTextBox != null)
+            {
+                _scriptTextBox.TextChanged += ScriptTextBox_TextChanged;
+            }
+
+            // Wire up Add buttons
+            var addFolder = FindChildByName<Button>(this.Content as DependencyObject, "AddFolderButton");
+            if (addFolder != null)
+                addFolder.Click += AddFolderButton_Click;
+
+            var addFile = FindChildByName<Button>(this.Content as DependencyObject, "AddFileButton");
+            if (addFile != null)
+                addFile.Click += AddFileButton_Click;
+
+            _previewPanel = (this.Content as FrameworkElement)?.FindName("PreviewPanel") as StackPanel ?? FindChildByName<StackPanel>(this.Content as DependencyObject, "PreviewPanel");
+
+            // Initial render
+            UpdatePreviewFromScript();
         }
 
         private T? FindChildByName<T>(DependencyObject? parent, string name) where T : DependencyObject
@@ -72,6 +91,181 @@ namespace HierarchyTool
             if (_scriptTextBox != null)
             {
                 _scriptTextBox.Text = string.Empty;
+            }
+        }
+
+        private void ScriptTextBox_TextChanged(object? sender, TextChangedEventArgs e)
+        {
+            UpdatePreviewFromScript();
+        }
+
+        private void AddFolderButton_Click(object? sender, RoutedEventArgs e)
+        {
+            if (_scriptTextBox == null)
+                return;
+
+            var insert = ">NewFolder\n";
+            var pos = _scriptTextBox.SelectionStart;
+            _scriptTextBox.Text = _scriptTextBox.Text.Insert(pos, insert);
+            _scriptTextBox.SelectionStart = pos + insert.Length;
+            UpdatePreviewFromScript();
+        }
+
+        private void AddFileButton_Click(object? sender, RoutedEventArgs e)
+        {
+            if (_scriptTextBox == null)
+                return;
+
+            var insert = "new-file.txt\n";
+            var pos = _scriptTextBox.SelectionStart;
+            _scriptTextBox.Text = _scriptTextBox.Text.Insert(pos, insert);
+            _scriptTextBox.SelectionStart = pos + insert.Length;
+            UpdatePreviewFromScript();
+        }
+
+        private void UpdatePreviewFromScript()
+        {
+            if (_previewPanel == null)
+                return;
+
+            _previewPanel.Children.Clear();
+
+            if (_scriptTextBox == null)
+                return;
+
+            var lines = _scriptTextBox.Text.Replace("\r\n", "\n").Split('\n');
+            var depthMap = new Dictionary<int, PreviewNode>();
+            var roots = new List<PreviewNode>();
+
+            foreach (var raw in lines)
+            {
+                var line = raw.TrimEnd();
+                if (string.IsNullOrWhiteSpace(line))
+                    continue;
+
+                int depth = 0;
+                while (depth < line.Length && line[depth] == '>')
+                    depth++;
+
+                var name = line.Substring(depth).Trim();
+                if (string.IsNullOrEmpty(name))
+                    continue;
+
+                bool isFolder = name.EndsWith("/") || !name.Contains('.');
+                var node = new PreviewNode { Name = name.TrimEnd('/'), IsFolder = isFolder };
+
+                if (depth == 0)
+                {
+                    roots.Add(node);
+                }
+                else
+                {
+                    if (depthMap.TryGetValue(depth - 1, out var parent))
+                    {
+                        parent.Children.Add(node);
+                    }
+                    else
+                    {
+                        // fallback
+                        roots.Add(node);
+                    }
+                }
+
+                depthMap[depth] = node;
+
+                // remove deeper
+                var keysToRemove = depthMap.Keys.Where(k => k > depth).ToList();
+                foreach (var k in keysToRemove)
+                    depthMap.Remove(k);
+            }
+
+            // mark last sibling flags
+            void MarkLast(List<PreviewNode> list)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    var n = list[i];
+                    n.IsLastSibling = (i == list.Count - 1);
+                    if (n.Children.Count > 0)
+                        MarkLast(n.Children);
+                }
+            }
+
+            MarkLast(roots);
+
+            // render
+            for (int i = 0; i < roots.Count; i++)
+            {
+                RenderNode(roots[i], new List<bool>());
+            }
+        }
+
+        private UIElement BuildNodeContent(string name, bool isFolder)
+        {
+            var panel = new StackPanel() { Orientation = Orientation.Horizontal, Spacing = 8 };
+
+            var icon = new FontIcon();
+            icon.FontFamily = new Microsoft.UI.Xaml.Media.FontFamily("Segoe MDL2 Assets");
+            icon.FontSize = 20;
+            icon.Glyph = isFolder ? "\uE8B7" : "\uE8A5"; // folder / document glyphs
+
+            var text = new TextBlock() { Text = name, VerticalAlignment = VerticalAlignment.Center };
+
+            panel.Children.Add(icon);
+            panel.Children.Add(text);
+
+            return panel;
+        }
+
+        private class PreviewNode
+        {
+            public string Name { get; set; } = string.Empty;
+            public bool IsFolder { get; set; }
+            public List<PreviewNode> Children { get; } = new List<PreviewNode>();
+            public bool IsLastSibling { get; set; }
+        }
+
+        private void RenderNode(PreviewNode node, List<bool> ancestorHasNext)
+        {
+            if (_previewPanel == null)
+                return;
+
+            // Row container
+            var row = new StackPanel() { Orientation = Orientation.Horizontal, Margin = new Thickness(4, 2, 4, 2), VerticalAlignment = VerticalAlignment.Center };
+
+            // For each ancestor level, draw a vertical line segment if ancestorHasNext is true
+            foreach (var hasNext in ancestorHasNext)
+            {
+                var slot = new Grid() { Width = 20, Height = 24 };
+                if (hasNext)
+                {
+                    var vert = new Microsoft.UI.Xaml.Shapes.Rectangle() { Width = 2, Height = 24, Fill = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Gray), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center };
+                    slot.Children.Add(vert);
+                }
+                row.Children.Add(slot);
+            }
+
+            // Current connector: horizontal line that connects to icon
+            var connectorSlot = new Grid() { Width = 20, Height = 24 };
+            var horiz = new Microsoft.UI.Xaml.Shapes.Rectangle() { Height = 2, Width = 14, Fill = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.Gray), VerticalAlignment = VerticalAlignment.Center, HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(4,0,0,0) };
+            connectorSlot.Children.Add(horiz);
+            row.Children.Add(connectorSlot);
+
+            // Icon
+            var icon = new FontIcon() { FontFamily = new Microsoft.UI.Xaml.Media.FontFamily("Segoe MDL2 Assets"), Glyph = node.IsFolder ? "\uE8B7" : "\uE8A5", FontSize = 20, Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.SkyBlue), VerticalAlignment = VerticalAlignment.Center };
+            row.Children.Add(icon);
+
+            // Text
+            var text = new TextBlock() { Text = node.Name, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(8, 0, 0, 0), Foreground = new Microsoft.UI.Xaml.Media.SolidColorBrush(Microsoft.UI.Colors.White), FontSize = 14 };
+            row.Children.Add(text);
+
+            _previewPanel.Children.Add(row);
+
+            // Prepare ancestor flags for children: ancestorHasNext plus whether this node has next sibling
+            var childAncestor = new List<bool>(ancestorHasNext) { !node.IsLastSibling };
+            for (int i = 0; i < node.Children.Count; i++)
+            {
+                RenderNode(node.Children[i], childAncestor);
             }
         }
 
