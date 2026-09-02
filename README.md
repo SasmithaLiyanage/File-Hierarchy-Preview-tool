@@ -18,6 +18,9 @@ A native Windows desktop application built with C# and WinUI 3 that allows devel
 
 ## 🚀 How It Works
 
+<img width="1426" height="782" alt="Screenshot 2026-09-02 231710" src="https://github.com/user-attachments/assets/06949762-df9d-472c-89b5-03d939c41f83" />
+
+
 1. **Write:** Select a pre-built standard template or start typing your custom hierarchy syntax.
 2. **Preview:** Verify the generated visual tree on the side panel.
 3. **Generate:** Click generate or use the built-in terminal command to build the actual folders and empty files on your local machine.
